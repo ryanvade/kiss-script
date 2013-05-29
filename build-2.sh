@@ -43,7 +43,7 @@ function error_exit
 	#		string containing descriptive error message
 	#####
 
-	err_msg="${PROGNAME}: ${1}"
+	err_msg="An erro hasr occured at line $LINERO: ${PROGNAME}: ${1}"
 	echo ${err_msg} >&2
 	clean_up
 	exit 1
@@ -161,7 +161,8 @@ function dependency_fix {
 
 echo "$sudopwd" | _exec $SUDO apt-get update
 
-echo "$sudopwd" | _exec $SUDO apt-get install g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-*
+echo "$sudopwd" | _exec $SUDO apt-get install libzbar-dev g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-* -y
+
 }
 #################################################################################################################################################
 #                                                         Function Declerations
@@ -189,13 +190,27 @@ pwd
   
     fi
   
-  cmake ..
-
-  make
+  if [ -f /usr/bin/qmake-qt4 ]; then
    
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
+  
+  make
+  if [ "$?" = "0" ]; then
+  
   sudo make install
 
-
+  else
+  
+  error_exit
+  
+  fi
+  
 else change_directory_error
 
 fi
@@ -226,10 +241,28 @@ if  [ ! -d "build" ]; then
     
     cd build/
 fi
-
-cmake ..
+ 
+  
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
 
 make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
 
@@ -264,9 +297,26 @@ if [ ! -d "build" ]; then
     cd build/
 fi
 
-cmake ..
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
 
 make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
 
@@ -301,9 +351,26 @@ pwd
   
   fi
 
+ if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
   cmake ..
+  
+  fi
 
-   make
+  make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
   
@@ -338,9 +405,26 @@ if [ ! -d "build" ]; then
 
 fi
 
-cmake ..
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
+  
+  make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
 
-make
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
   
@@ -374,9 +458,26 @@ if [ ! -d "build" ]; then
 
 fi
 
-cmake ..
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
 
-make
+  make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
 else change_directory_error
@@ -410,9 +511,26 @@ if [ ! -d "build" ]; then
 
 fi
 
-cmake ..
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
 
-make 
+  make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
 
 sudo make install
 else change_directory_error
@@ -423,17 +541,17 @@ fi
 
 function finish_move {
 
-#echo "Done Building and installing. Moving the entire folder to /opt ."
+echo "Done Building and installing. Moving the entire folder to /opt ."
 
-#if cd "../../../"; then
+if cd "../../../"; then
 
 pwd
 
- # echo "$sudopwd" | _exec $SUDO cp ./kiss-script /opt
+  echo "$sudopwd" | _exec $SUDO cp ./kiss-script /opt
  
- #else 
- #error_exit
-#fi
+ else 
+ error_exit
+fi
 
 echo "Linking"
 
