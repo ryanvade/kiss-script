@@ -159,9 +159,15 @@ function test_root
 }
 function dependency_fix {
 
-echo "$sudopwd" | _exec $SUDO apt-get update
+if hash apt-get 2>&-; then
 
-echo "$sudopwd" | _exec $SUDO apt-get install libzbar-dev g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-* -y
+	echo "$sudopwd" | _exec $SUDO apt-get update
+
+	echo "$sudopwd" | _exec $SUDO apt-get install libzbar-dev g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-* -y
+	
+	else
+	echo "apt-get not found. This is not a debian based system."
+fi
 
 }
 #################################################################################################################################################
@@ -542,17 +548,13 @@ function finish_move {
 
 echo "Done Building and installing. Moving the entire folder to /opt ."
 
-if cd "../../../"; then
+ cd ../../../
 
-pwd
+ pwd
 
-  echo "$sudopwd" | _exec $SUDO mv ./kiss-script /opt
+ echo "$sudopwd" | _exec $SUDO cp -r ./kiss-script /opt
  
- else 
- error_exit
-fi
-
-echo "Linking"
+ echo "Linking"
 
 # link IDE in /usr/bin
 sudo ln -s /opt/kiss-script/kiss/deploy/KISS /usr/bin/KISS
@@ -566,8 +568,17 @@ sudo ldconfig /usr/local/include/kovan
 sudo ldconfig /usr/local/lib
 
 
-echo "Done Linking.If running on ubuntu with Unity, place your launchers in /usr/share/applications. "
-echo "Links have been placed in /usr/bin. (/usr/bin/KISS,ks2)."
+echo "Done Linking. Moving Desktop files to /usr/share/applications if it exists "
+echo "Links have been placed in /usr/bin. (for /usr/bin/KISS,ks2)."
+
+if [ -d /usr/share/applications ]; then
+	
+	echo "$sudopwd" | _exec $SUDO cp /opt/kiss-script/{KS2.desktop,KISS.desktop} /usr/share/applications
+
+	else
+
+	echo "/usr/share/applications does not exist. So not copying Desktop files."
+fi
 
 if [ -f /usr/lib/codeblocks/plugins/libcompiler.so ]; then
 
