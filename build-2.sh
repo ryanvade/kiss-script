@@ -159,20 +159,9 @@ function test_root
 }
 function dependency_fix {
 
-if [ hash apt-get 2>&- ]; then 
-
 echo "$sudopwd" | _exec $SUDO apt-get update
 
-echo "$sudopwd" | _exec $SUDO apt-get install g++ libqscintilla2-dev cmake codeblocks
-
-
-
-else 
-
-echo "apt-get not found cannot install dependencies"
-
-fi
-
+echo "$sudopwd" | _exec $SUDO apt-get install g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-*
 }
 #################################################################################################################################################
 #                                                         Function Declerations
