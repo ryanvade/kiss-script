@@ -1,0 +1,3 @@
+/usr/local/include/kar.hpp
+/usr/local/lib/libkar.so
+/usr/local/bin/kissarchive

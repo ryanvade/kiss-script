@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/create.dir/create.cpp.o  -o create -rdynamic -lQtCore ../../lib/libkar.so -lQtCore -Wl,-rpath,/build/kiss-script/libkar/lib 
