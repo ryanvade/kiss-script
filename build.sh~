@@ -1,0 +1,27 @@
+#!/bin/bash
+
+git clone git://github.com/kipr/libkar.git
+git clone git://github.com/kipr/pcompiler.git
+git clone git://github.com/kipr/libkovanserial.git
+git clone git://github.com/kipr/kiss.git
+cd libkar
+mkdir build
+cd build/
+cmake ..
+sudo make install
+cd ../../pcompiler/
+mkdir build
+cd build/
+cmake ..
+sudo make install
+cd ../../libkovanserial/
+mkdir build
+cd build/
+cmake ..
+sudo make install
+cd ../../kiss/
+mkdir build
+cd build/
+cmake ..
+sudo make install
+./deploy/KISS

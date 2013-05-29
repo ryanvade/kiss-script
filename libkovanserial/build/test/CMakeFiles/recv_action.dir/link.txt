@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/recv_action.dir/recv_action.cpp.o  -o recv_action -rdynamic ../../lib/libkovanserial.so -Wl,-rpath,/build/kiss-script/libkovanserial/lib 

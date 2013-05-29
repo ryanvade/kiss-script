@@ -1,0 +1,4 @@
+/build/kiss-script/pcompiler/build/test/basic/CMakeFiles/basic.dir
+/build/kiss-script/pcompiler/build/tools/CMakeFiles/pco.dir
+/build/kiss-script/pcompiler/build/CMakeFiles/pcompiler.dir
+/build/kiss-script/pcompiler/build/test/option_parser/CMakeFiles/test_option_parser.dir

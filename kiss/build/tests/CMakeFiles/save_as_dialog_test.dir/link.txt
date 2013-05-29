@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -fPIC    CMakeFiles/save_as_dialog_test.dir/save_as_dialog_test.cpp.o  -o ../../deploy/save_as_dialog_test  -L/build/kiss-script/kiss/lib -rdynamic ../../lib/libkisside.a -lpcompiler -lkar -lQtDeclarative -lQtScript -lQtSvg -lQtXmlPatterns -lQtGui -lQtXml -lQtSql -lQtNetwork -lQtCore -Wl,-rpath,/build/kiss-script/kiss/lib 

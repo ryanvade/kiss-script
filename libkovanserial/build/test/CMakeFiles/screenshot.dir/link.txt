@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/screenshot.dir/screenshot.cpp.o  -o screenshot -rdynamic ../../lib/libkovanserial.so -Wl,-rpath,/build/kiss-script/libkovanserial/lib 

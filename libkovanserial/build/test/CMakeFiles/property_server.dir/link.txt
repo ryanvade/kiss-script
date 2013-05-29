@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/property_server.dir/property_server.cpp.o  -o property_server -rdynamic ../../lib/libkovanserial.so -Wl,-rpath,/build/kiss-script/libkovanserial/lib 

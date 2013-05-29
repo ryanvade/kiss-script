@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/kovanserial/udp_advertiser.hpp
+string
+-
+list
+-
+winsock2.h
+-
+winsock.h
+-
+ws2tcpip.h
+-
+windows.h
+-
+sys/socket.h
+-
+netinet/in.h
+-
+
+/build/kiss-script/libkovanserial/test/heartbeat.cpp
+kovanserial/udp_advertiser.hpp
+-
+iostream
+-
+

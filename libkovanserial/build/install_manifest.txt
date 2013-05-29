@@ -1,0 +1,15 @@
+/usr/local/include/kovanserial/transmitter.hpp
+/usr/local/include/kovanserial/transport_layer.hpp
+/usr/local/include/kovanserial/usb_serial_unix.hpp
+/usr/local/include/kovanserial/command_types.hpp
+/usr/local/include/kovanserial/kovan_serial.hpp
+/usr/local/include/kovanserial/tcp_serial.hpp
+/usr/local/include/kovanserial/tcp.hpp
+/usr/local/include/kovanserial/general.hpp
+/usr/local/include/kovanserial/usb_serial_win.hpp
+/usr/local/include/kovanserial/tcp_server.hpp
+/usr/local/include/kovanserial/platform_defines.hpp
+/usr/local/include/kovanserial/usb_serial.hpp
+/usr/local/include/kovanserial/udp_advertiser.hpp
+/usr/local/include/kovanserial/crc.h
+/usr/local/lib/libkovanserial.so

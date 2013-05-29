@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall    CMakeFiles/basic.dir/basic.cpp.o  -o basic  -L/build/kiss-script/pcompiler/lib -rdynamic ../../../lib/libpcompiler.so -lQtCore -Wl,-rpath,/build/kiss-script/pcompiler/lib 

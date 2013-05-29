@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/kovanserial/crc.h
+stdlib.h
+-
+stdint.h
+-
+
+/build/kiss-script/libkovanserial/src/crc.c
+kovanserial/crc.h
+/build/kiss-script/libkovanserial/src/kovanserial/crc.h
+stdlib.h
+-
+stdint.h
+-
+

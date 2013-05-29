@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -fPIC    CMakeFiles/camera_cpp.dir/camera.cpp.o  -o camera_cpp -rdynamic ../../../lib/libkovan.so -lpthread -lopencv_core -lopencv_highgui -lopencv_imgproc -lzbar -lavcodec -lavformat -lavutil -lz -lswscale -lbz2 -Wl,-rpath,/build/kiss-script/libkovan/lib 

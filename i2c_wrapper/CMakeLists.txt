@@ -1,0 +1,17 @@
+PROJECT(i2c_wrapper)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
+
+SET(INCLUDE ${i2c_wrapper_SOURCE_DIR}/include)
+SET(SRC ${i2c_wrapper_SOURCE_DIR}/src)
+
+INCLUDE_DIRECTORIES(${INCLUDE})
+
+FILE(GLOB INCLUDES ${INCLUDE}/*.h)
+FILE(GLOB SOURCES ${SRC}/check_funcs.c ${SRC}/i2c_wrapper.c ${SRC}/i2cbusses.c)
+
+SET(CMAKE_CXX_FLAGS "-Wall")
+
+ADD_LIBRARY(i2c_wrapper SHARED ${SOURCES})
+
+SET(LIBRARY_OUTPUT_PATH ${i2c_wrapper_SOURCE_DIR}/lib)

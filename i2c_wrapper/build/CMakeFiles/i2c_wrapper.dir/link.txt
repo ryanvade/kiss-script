@@ -1,0 +1,1 @@
+/usr/bin/cc  -fPIC    -shared -Wl,-soname,libi2c_wrapper.so -o ../lib/libi2c_wrapper.so CMakeFiles/i2c_wrapper.dir/src/check_funcs.c.o CMakeFiles/i2c_wrapper.dir/src/i2c_wrapper.c.o CMakeFiles/i2c_wrapper.dir/src/i2cbusses.c.o 
