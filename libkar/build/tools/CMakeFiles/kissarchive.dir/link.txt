@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/kissarchive.dir/kissarchive.cpp.o  -o kissarchive -rdynamic -lQtCore ../../lib/libkar.so -lQtCore -Wl,-rpath,/build/kiss-script/libkar/lib: 

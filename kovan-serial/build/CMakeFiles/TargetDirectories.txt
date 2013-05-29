@@ -1,1 +1,0 @@
-/build/kovan-serial/build/CMakeFiles/kovan-serial.dir

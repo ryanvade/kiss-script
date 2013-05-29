@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -fPIC    CMakeFiles/template_test.dir/template_test.cpp.o  -o ../../deploy/template_test  -L/build/kiss-script/kiss/lib -rdynamic ../../lib/libkisside.a -lpcompiler -lkar -lQtDeclarative -lQtScript -lQtSvg -lQtXmlPatterns -lQtGui -lQtXml -lQtSql -lQtNetwork -lQtCore -Wl,-rpath,/build/kiss-script/kiss/lib 

@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/datalog_c.dir/datalog.c.o  -o datalog_c -rdynamic ../../../lib/libkovan.so -lm -lpthread -lopencv_core -lopencv_highgui -lopencv_imgproc -lzbar -lavcodec -lavformat -lavutil -lz -lswscale -lbz2 -Wl,-rpath,/build/kiss-script/libkovan/lib 

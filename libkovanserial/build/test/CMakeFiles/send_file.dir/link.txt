@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/send_file.dir/send_file.cpp.o  -o send_file -rdynamic ../../lib/libkovanserial.so -Wl,-rpath,/build/kiss-script/libkovanserial/lib 

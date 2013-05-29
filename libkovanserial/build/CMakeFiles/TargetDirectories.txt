@@ -1,9 +1,0 @@
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/heartbeat.dir
-/build/kiss-script/libkovanserial/build/CMakeFiles/kovanserial.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/property_client.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/property_server.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/recv_action.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/screenshot.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/send_action.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/send_file.dir
-/build/kiss-script/libkovanserial/build/test/CMakeFiles/server.dir

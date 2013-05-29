@@ -1,1 +1,0 @@
-/usr/bin/c++       CMakeFiles/extract.dir/extract.cpp.o  -o extract -rdynamic -lQtCore ../../lib/libkar.so -lQtCore -Wl,-rpath,/build/kiss-script/libkar/lib 

@@ -1,4 +1,0 @@
-/build/kiss-script/libkar/build/tests/CMakeFiles/create.dir
-/build/kiss-script/libkar/build/tests/CMakeFiles/extract.dir
-/build/kiss-script/libkar/build/CMakeFiles/kar.dir
-/build/kiss-script/libkar/build/tools/CMakeFiles/kissarchive.dir

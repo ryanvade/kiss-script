@@ -1,4 +1,0 @@
-/build/kiss-script/ks2/build/CMakeFiles/copy_board.dir
-/build/kiss-script/ks2/build/CMakeFiles/copy_platform.hints.dir
-/build/kiss-script/ks2/build/CMakeFiles/copy_target.dir
-/build/kiss-script/ks2/build/CMakeFiles/ks2.dir

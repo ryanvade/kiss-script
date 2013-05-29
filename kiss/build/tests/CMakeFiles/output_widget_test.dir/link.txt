@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -fPIC    CMakeFiles/output_widget_test.dir/output_widget_test.cpp.o  -o ../../deploy/output_widget_test  -L/build/kiss-script/kiss/lib -rdynamic ../../lib/libkisside.a -lpcompiler -lkar -lQtDeclarative -lQtScript -lQtSvg -lQtXmlPatterns -lQtGui -lQtXml -lQtSql -lQtNetwork -lQtCore -Wl,-rpath,/build/kiss-script/kiss/lib 

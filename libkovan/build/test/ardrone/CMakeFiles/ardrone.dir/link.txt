@@ -1,1 +1,0 @@
-/usr/bin/c++   -Wall -fPIC    CMakeFiles/ardrone.dir/ardrone.cpp.o  -o ardrone -rdynamic ../../../lib/libkovan.so -lpthread -lopencv_core -lopencv_highgui -lopencv_imgproc -lzbar -lavcodec -lavformat -lavutil -lz -lswscale -lbz2 -Wl,-rpath,/build/kiss-script/libkovan/lib 

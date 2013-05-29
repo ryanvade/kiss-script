@@ -1,1 +1,0 @@
-/usr/bin/cc      CMakeFiles/msleep.dir/msleep.c.o  -o msleep -rdynamic ../../../lib/libkovan.so -lpthread -lopencv_core -lopencv_highgui -lopencv_imgproc -lzbar -lavcodec -lavformat -lavutil -lz -lswscale -lbz2 -Wl,-rpath,/build/kiss-script/libkovan/lib 
