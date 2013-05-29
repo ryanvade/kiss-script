@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -85,15 +85,15 @@ output_widget_test_EXTERNAL_OBJECTS =
 ../deploy/output_widget_test: tests/CMakeFiles/output_widget_test.dir/output_widget_test.cpp.o
 ../deploy/output_widget_test: tests/CMakeFiles/output_widget_test.dir/build.make
 ../deploy/output_widget_test: ../lib/libkisside.a
-../deploy/output_widget_test: /usr/lib64/libQtDeclarative.so
-../deploy/output_widget_test: /usr/lib64/libQtScript.so
-../deploy/output_widget_test: /usr/lib64/libQtSvg.so
-../deploy/output_widget_test: /usr/lib64/libQtXmlPatterns.so
-../deploy/output_widget_test: /usr/lib64/libQtGui.so
-../deploy/output_widget_test: /usr/lib64/libQtXml.so
-../deploy/output_widget_test: /usr/lib64/libQtSql.so
-../deploy/output_widget_test: /usr/lib64/libQtNetwork.so
-../deploy/output_widget_test: /usr/lib64/libQtCore.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../deploy/output_widget_test: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../deploy/output_widget_test: tests/CMakeFiles/output_widget_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../deploy/output_widget_test"
 	cd /build/kiss-script/kiss/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/output_widget_test.dir/link.txt --verbose=$(VERBOSE)

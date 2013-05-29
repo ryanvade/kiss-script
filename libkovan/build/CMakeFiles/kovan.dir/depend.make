@@ -94,11 +94,9 @@ CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: ../src/ardrone_video_p.cpp
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: ../src/ardrone_video_p.hpp
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: ../src/uvlc_video_decoder_p.hpp
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libavcodec/avcodec.h
-CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libavcodec/old_codec_ids.h
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libavformat/avformat.h
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libavformat/avio.h
 CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libswscale/swscale.h
-CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o: /usr/include/libswscale/version.h
 
 CMakeFiles/kovan.dir/src/audio.cpp.o: ../include/kovan/audio.h
 CMakeFiles/kovan.dir/src/audio.cpp.o: ../include/kovan/export.h

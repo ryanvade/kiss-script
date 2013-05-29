@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/ks2
@@ -52,100 +52,100 @@ include CMakeFiles/ks2.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/ks2.dir/flags.make
 
-include/moc_button_ids.cxx: ../include/button_ids.hpp
+include/moc_kovan_regs_p.cxx: ../include/kovan_regs_p.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_1)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_button_ids.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_button_ids.cxx /build/kiss-script/ks2/include/button_ids.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_regs_p.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_regs_p.cxx /build/kiss-script/ks2/include/kovan_regs_p.hpp
 
-include/moc_console_widget.cxx: ../include/console_widget.hpp
+include/moc_button_ids.cxx: ../include/button_ids.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_console_widget.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_console_widget.cxx /build/kiss-script/ks2/include/console_widget.hpp
-
-include/moc_kovan_kmod_sim.cxx: ../include/kovan_kmod_sim.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_3)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_kmod_sim.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx /build/kiss-script/ks2/include/kovan_kmod_sim.hpp
-
-include/moc_button.cxx: ../include/button.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_4)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_button.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_button.cxx /build/kiss-script/ks2/include/button.hpp
-
-include/moc_kovan_spiral-inl.cxx: ../include/kovan_spiral-inl.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_5)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_spiral-inl.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx /build/kiss-script/ks2/include/kovan_spiral-inl.hpp
-
-include/moc_touch_dial.cxx: ../include/touch_dial.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_6)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_touch_dial.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_touch_dial.cxx /build/kiss-script/ks2/include/touch_dial.hpp
-
-include/moc_robot.cxx: ../include/robot.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_robot.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_robot.cxx /build/kiss-script/ks2/include/robot.hpp
-
-include/moc_server_thread.cxx: ../include/server_thread.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_8)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_server_thread.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_server_thread.cxx /build/kiss-script/ks2/include/server_thread.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_button_ids.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_button_ids.cxx /build/kiss-script/ks2/include/button_ids.hpp
 
 include/moc_heartbeat.cxx: ../include/heartbeat.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_heartbeat.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_heartbeat.cxx /build/kiss-script/ks2/include/heartbeat.hpp
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_heartbeat.cxx /build/kiss-script/ks2/include/heartbeat.hpp
 
-include/moc_scaling_graphics_view.cxx: ../include/scaling_graphics_view.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_10)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_scaling_graphics_view.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx /build/kiss-script/ks2/include/scaling_graphics_view.hpp
-
-include/moc_kovan_regs_p.cxx: ../include/kovan_regs_p.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_11)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_regs_p.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_regs_p.cxx /build/kiss-script/ks2/include/kovan_regs_p.hpp
-
-include/moc_board_file.cxx: ../include/board_file.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_12)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_board_file.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_board_file.cxx /build/kiss-script/ks2/include/board_file.hpp
+include/moc_server_thread.cxx: ../include/server_thread.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_server_thread.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_server_thread.cxx /build/kiss-script/ks2/include/server_thread.hpp
 
 include/moc_light.cxx: ../include/light.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_light.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_light.cxx /build/kiss-script/ks2/include/light.hpp
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_light.cxx /build/kiss-script/ks2/include/light.hpp
+
+include/moc_console_widget.cxx: ../include/console_widget.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_console_widget.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_console_widget.cxx /build/kiss-script/ks2/include/console_widget.hpp
 
 include/moc_main_window.cxx: ../include/main_window.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_main_window.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_main_window.cxx /build/kiss-script/ks2/include/main_window.hpp
-
-include/moc_compile_worker.cxx: ../include/compile_worker.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_15)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_compile_worker.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_compile_worker.cxx /build/kiss-script/ks2/include/compile_worker.hpp
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_main_window.cxx /build/kiss-script/ks2/include/main_window.hpp
 
 include/moc_simulator.cxx: ../include/simulator.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_8)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_simulator.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_simulator.cxx /build/kiss-script/ks2/include/simulator.hpp
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_simulator.cxx /build/kiss-script/ks2/include/simulator.hpp
+
+include/moc_compile_worker.cxx: ../include/compile_worker.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_compile_worker.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_compile_worker.cxx /build/kiss-script/ks2/include/compile_worker.hpp
+
+include/moc_board_file.cxx: ../include/board_file.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_10)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_board_file.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_board_file.cxx /build/kiss-script/ks2/include/board_file.hpp
+
+include/moc_robot.cxx: ../include/robot.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_11)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_robot.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_robot.cxx /build/kiss-script/ks2/include/robot.hpp
+
+include/moc_kovan_protocol_p.cxx: ../include/kovan_protocol_p.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_12)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_protocol_p.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx /build/kiss-script/ks2/include/kovan_protocol_p.hpp
+
+include/moc_button.cxx: ../include/button.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_13)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_button.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_button.cxx /build/kiss-script/ks2/include/button.hpp
+
+include/moc_touch_dial.cxx: ../include/touch_dial.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_14)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_touch_dial.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_touch_dial.cxx /build/kiss-script/ks2/include/touch_dial.hpp
+
+include/moc_kovan_kmod_sim.cxx: ../include/kovan_kmod_sim.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_15)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_kmod_sim.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx /build/kiss-script/ks2/include/kovan_kmod_sim.hpp
+
+include/moc_kovan_spiral-inl.cxx: ../include/kovan_spiral-inl.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_16)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_spiral-inl.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx /build/kiss-script/ks2/include/kovan_spiral-inl.hpp
 
 include/moc_kovan_button_provider.cxx: ../include/kovan_button_provider.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_17)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_button_provider.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_button_provider.cxx /build/kiss-script/ks2/include/kovan_button_provider.hpp
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_button_provider.cxx /build/kiss-script/ks2/include/kovan_button_provider.hpp
 
-include/moc_kovan_protocol_p.cxx: ../include/kovan_protocol_p.hpp
+include/moc_scaling_graphics_view.cxx: ../include/scaling_graphics_view.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_18)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_kovan_protocol_p.cxx"
-	/usr/lib/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx /build/kiss-script/ks2/include/kovan_protocol_p.hpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating include/moc_scaling_graphics_view.cxx"
+	/usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/ks2/include -I/build/kiss-script/ks2/build -I/usr/include/qt4 -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx /build/kiss-script/ks2/include/scaling_graphics_view.hpp
 
 ui_main_window.h: ../ui/main_window.ui
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_19)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating ui_main_window.h"
-	/usr/lib/qt4/bin/uic -o /build/kiss-script/ks2/build/ui_main_window.h /build/kiss-script/ks2/ui/main_window.ui
+	/usr/lib/x86_64-linux-gnu/qt4/bin/uic -o /build/kiss-script/ks2/build/ui_main_window.h /build/kiss-script/ks2/ui/main_window.ui
 
 qrc_icons.cxx: ../rc/icons/accept.png
 qrc_icons.cxx: ../rc/icons/add.png
@@ -1152,11 +1152,126 @@ qrc_icons.cxx: rc/icons.qrc.depends
 qrc_icons.cxx: ../rc/icons.qrc
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_20)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating qrc_icons.cxx"
-	/usr/lib/qt4/bin/rcc -name icons -o /build/kiss-script/ks2/build/qrc_icons.cxx /build/kiss-script/ks2/rc/icons.qrc
+	/usr/lib/x86_64-linux-gnu/qt4/bin/rcc -name icons -o /build/kiss-script/ks2/build/qrc_icons.cxx /build/kiss-script/ks2/rc/icons.qrc
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o: ../src/scaling_graphics_view.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o -c /build/kiss-script/ks2/src/scaling_graphics_view.cpp
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/scaling_graphics_view.cpp > CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/scaling_graphics_view.cpp -o CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides.build: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/compile_worker.cpp.o: ../src/compile_worker.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/compile_worker.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/compile_worker.cpp.o -c /build/kiss-script/ks2/src/compile_worker.cpp
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/compile_worker.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/compile_worker.cpp > CMakeFiles/ks2.dir/src/compile_worker.cpp.i
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/compile_worker.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/compile_worker.cpp -o CMakeFiles/ks2.dir/src/compile_worker.cpp.s
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides: CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides.build: CMakeFiles/ks2.dir/src/compile_worker.cpp.o
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/touch_dial.cpp.o: ../src/touch_dial.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_23)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/touch_dial.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/touch_dial.cpp.o -c /build/kiss-script/ks2/src/touch_dial.cpp
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/touch_dial.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/touch_dial.cpp > CMakeFiles/ks2.dir/src/touch_dial.cpp.i
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/touch_dial.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/touch_dial.cpp -o CMakeFiles/ks2.dir/src/touch_dial.cpp.s
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides: CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides.build: CMakeFiles/ks2.dir/src/touch_dial.cpp.o
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/console_widget.cpp.o: ../src/console_widget.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_24)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/console_widget.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/console_widget.cpp.o -c /build/kiss-script/ks2/src/console_widget.cpp
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/console_widget.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/console_widget.cpp > CMakeFiles/ks2.dir/src/console_widget.cpp.i
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/console_widget.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/console_widget.cpp -o CMakeFiles/ks2.dir/src/console_widget.cpp.s
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides: CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides.build: CMakeFiles/ks2.dir/src/console_widget.cpp.o
+
+CMakeFiles/ks2.dir/src/main_window.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/main_window.cpp.o: ../src/main_window.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/main_window.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/main_window.cpp.o -c /build/kiss-script/ks2/src/main_window.cpp
+
+CMakeFiles/ks2.dir/src/main_window.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/main_window.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/main_window.cpp > CMakeFiles/ks2.dir/src/main_window.cpp.i
+
+CMakeFiles/ks2.dir/src/main_window.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/main_window.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/main_window.cpp -o CMakeFiles/ks2.dir/src/main_window.cpp.s
+
+CMakeFiles/ks2.dir/src/main_window.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/main_window.cpp.o.provides: CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/main_window.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/main_window.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/main_window.cpp.o.provides.build: CMakeFiles/ks2.dir/src/main_window.cpp.o
 
 CMakeFiles/ks2.dir/src/button.cpp.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/src/button.cpp.o: ../src/button.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_21)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_26)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/button.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/button.cpp.o -c /build/kiss-script/ks2/src/button.cpp
 
@@ -1179,7 +1294,7 @@ CMakeFiles/ks2.dir/src/button.cpp.o.provides.build: CMakeFiles/ks2.dir/src/butto
 
 CMakeFiles/ks2.dir/src/server_thread.cpp.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/src/server_thread.cpp.o: ../src/server_thread.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_22)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_27)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/server_thread.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/server_thread.cpp.o -c /build/kiss-script/ks2/src/server_thread.cpp
 
@@ -1200,55 +1315,9 @@ CMakeFiles/ks2.dir/src/server_thread.cpp.o.provides: CMakeFiles/ks2.dir/src/serv
 
 CMakeFiles/ks2.dir/src/server_thread.cpp.o.provides.build: CMakeFiles/ks2.dir/src/server_thread.cpp.o
 
-CMakeFiles/ks2.dir/src/main_window.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/main_window.cpp.o: ../src/main_window.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_23)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/main_window.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/main_window.cpp.o -c /build/kiss-script/ks2/src/main_window.cpp
-
-CMakeFiles/ks2.dir/src/main_window.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/main_window.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/main_window.cpp > CMakeFiles/ks2.dir/src/main_window.cpp.i
-
-CMakeFiles/ks2.dir/src/main_window.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/main_window.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/main_window.cpp -o CMakeFiles/ks2.dir/src/main_window.cpp.s
-
-CMakeFiles/ks2.dir/src/main_window.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/main_window.cpp.o.provides: CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/main_window.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/main_window.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/main_window.cpp.o.provides.build: CMakeFiles/ks2.dir/src/main_window.cpp.o
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o: ../src/kovan_kmod_sim.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_24)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o -c /build/kiss-script/ks2/src/kovan_kmod_sim.cpp
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/kovan_kmod_sim.cpp > CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/kovan_kmod_sim.cpp -o CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides.build: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o
-
 CMakeFiles/ks2.dir/src/main.cpp.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/src/main.cpp.o: ../src/main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_25)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_28)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/main.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/main.cpp.o -c /build/kiss-script/ks2/src/main.cpp
 
@@ -1269,101 +1338,9 @@ CMakeFiles/ks2.dir/src/main.cpp.o.provides: CMakeFiles/ks2.dir/src/main.cpp.o.re
 
 CMakeFiles/ks2.dir/src/main.cpp.o.provides.build: CMakeFiles/ks2.dir/src/main.cpp.o
 
-CMakeFiles/ks2.dir/src/robot.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/robot.cpp.o: ../src/robot.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_26)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/robot.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/robot.cpp.o -c /build/kiss-script/ks2/src/robot.cpp
-
-CMakeFiles/ks2.dir/src/robot.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/robot.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/robot.cpp > CMakeFiles/ks2.dir/src/robot.cpp.i
-
-CMakeFiles/ks2.dir/src/robot.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/robot.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/robot.cpp -o CMakeFiles/ks2.dir/src/robot.cpp.s
-
-CMakeFiles/ks2.dir/src/robot.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/robot.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/robot.cpp.o.provides: CMakeFiles/ks2.dir/src/robot.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/robot.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/robot.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/robot.cpp.o.provides.build: CMakeFiles/ks2.dir/src/robot.cpp.o
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/heartbeat.cpp.o: ../src/heartbeat.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_27)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/heartbeat.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/heartbeat.cpp.o -c /build/kiss-script/ks2/src/heartbeat.cpp
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/heartbeat.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/heartbeat.cpp > CMakeFiles/ks2.dir/src/heartbeat.cpp.i
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/heartbeat.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/heartbeat.cpp -o CMakeFiles/ks2.dir/src/heartbeat.cpp.s
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides: CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides.build: CMakeFiles/ks2.dir/src/heartbeat.cpp.o
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/console_widget.cpp.o: ../src/console_widget.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_28)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/console_widget.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/console_widget.cpp.o -c /build/kiss-script/ks2/src/console_widget.cpp
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/console_widget.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/console_widget.cpp > CMakeFiles/ks2.dir/src/console_widget.cpp.i
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/console_widget.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/console_widget.cpp -o CMakeFiles/ks2.dir/src/console_widget.cpp.s
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides: CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/console_widget.cpp.o.provides.build: CMakeFiles/ks2.dir/src/console_widget.cpp.o
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/compile_worker.cpp.o: ../src/compile_worker.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_29)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/compile_worker.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/compile_worker.cpp.o -c /build/kiss-script/ks2/src/compile_worker.cpp
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/compile_worker.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/compile_worker.cpp > CMakeFiles/ks2.dir/src/compile_worker.cpp.i
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/compile_worker.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/compile_worker.cpp -o CMakeFiles/ks2.dir/src/compile_worker.cpp.s
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides: CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides
-
-CMakeFiles/ks2.dir/src/compile_worker.cpp.o.provides.build: CMakeFiles/ks2.dir/src/compile_worker.cpp.o
-
 CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o: ../src/kovan_button_provider.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_29)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o -c /build/kiss-script/ks2/src/kovan_button_provider.cpp
 
@@ -1384,28 +1361,51 @@ CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o.provides: CMakeFiles/ks2.dir/
 
 CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o.provides.build: CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o
 
-CMakeFiles/ks2.dir/src/light.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/light.cpp.o: ../src/light.cpp
+CMakeFiles/ks2.dir/src/robot.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/robot.cpp.o: ../src/robot.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_30)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/robot.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/robot.cpp.o -c /build/kiss-script/ks2/src/robot.cpp
+
+CMakeFiles/ks2.dir/src/robot.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/robot.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/robot.cpp > CMakeFiles/ks2.dir/src/robot.cpp.i
+
+CMakeFiles/ks2.dir/src/robot.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/robot.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/robot.cpp -o CMakeFiles/ks2.dir/src/robot.cpp.s
+
+CMakeFiles/ks2.dir/src/robot.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/robot.cpp.o.requires
+
+CMakeFiles/ks2.dir/src/robot.cpp.o.provides: CMakeFiles/ks2.dir/src/robot.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/robot.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/robot.cpp.o.provides
+
+CMakeFiles/ks2.dir/src/robot.cpp.o.provides.build: CMakeFiles/ks2.dir/src/robot.cpp.o
+
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o: ../src/kovan_kmod_sim.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_31)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/light.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/light.cpp.o -c /build/kiss-script/ks2/src/light.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o -c /build/kiss-script/ks2/src/kovan_kmod_sim.cpp
 
-CMakeFiles/ks2.dir/src/light.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/light.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/light.cpp > CMakeFiles/ks2.dir/src/light.cpp.i
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/kovan_kmod_sim.cpp > CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.i
 
-CMakeFiles/ks2.dir/src/light.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/light.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/light.cpp -o CMakeFiles/ks2.dir/src/light.cpp.s
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/kovan_kmod_sim.cpp -o CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.s
 
-CMakeFiles/ks2.dir/src/light.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/light.cpp.o.requires
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
 
-CMakeFiles/ks2.dir/src/light.cpp.o.provides: CMakeFiles/ks2.dir/src/light.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/light.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/light.cpp.o.provides
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides
 
-CMakeFiles/ks2.dir/src/light.cpp.o.provides.build: CMakeFiles/ks2.dir/src/light.cpp.o
+CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.provides.build: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o
 
 CMakeFiles/ks2.dir/src/board_file.cpp.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/src/board_file.cpp.o: ../src/board_file.cpp
@@ -1430,285 +1430,55 @@ CMakeFiles/ks2.dir/src/board_file.cpp.o.provides: CMakeFiles/ks2.dir/src/board_f
 
 CMakeFiles/ks2.dir/src/board_file.cpp.o.provides.build: CMakeFiles/ks2.dir/src/board_file.cpp.o
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/touch_dial.cpp.o: ../src/touch_dial.cpp
+CMakeFiles/ks2.dir/src/light.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/light.cpp.o: ../src/light.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_33)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/touch_dial.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/touch_dial.cpp.o -c /build/kiss-script/ks2/src/touch_dial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/light.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/light.cpp.o -c /build/kiss-script/ks2/src/light.cpp
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/touch_dial.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/touch_dial.cpp > CMakeFiles/ks2.dir/src/touch_dial.cpp.i
+CMakeFiles/ks2.dir/src/light.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/light.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/light.cpp > CMakeFiles/ks2.dir/src/light.cpp.i
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/touch_dial.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/touch_dial.cpp -o CMakeFiles/ks2.dir/src/touch_dial.cpp.s
+CMakeFiles/ks2.dir/src/light.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/light.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/light.cpp -o CMakeFiles/ks2.dir/src/light.cpp.s
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
+CMakeFiles/ks2.dir/src/light.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/light.cpp.o.requires
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides: CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides
+CMakeFiles/ks2.dir/src/light.cpp.o.provides: CMakeFiles/ks2.dir/src/light.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/light.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/light.cpp.o.provides
 
-CMakeFiles/ks2.dir/src/touch_dial.cpp.o.provides.build: CMakeFiles/ks2.dir/src/touch_dial.cpp.o
+CMakeFiles/ks2.dir/src/light.cpp.o.provides.build: CMakeFiles/ks2.dir/src/light.cpp.o
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o: ../src/scaling_graphics_view.cpp
+CMakeFiles/ks2.dir/src/heartbeat.cpp.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/src/heartbeat.cpp.o: ../src/heartbeat.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_34)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o -c /build/kiss-script/ks2/src/scaling_graphics_view.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/src/heartbeat.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/src/heartbeat.cpp.o -c /build/kiss-script/ks2/src/heartbeat.cpp
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/scaling_graphics_view.cpp > CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.i
+CMakeFiles/ks2.dir/src/heartbeat.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/src/heartbeat.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/src/heartbeat.cpp > CMakeFiles/ks2.dir/src/heartbeat.cpp.i
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/scaling_graphics_view.cpp -o CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.s
+CMakeFiles/ks2.dir/src/heartbeat.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/src/heartbeat.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/src/heartbeat.cpp -o CMakeFiles/ks2.dir/src/heartbeat.cpp.s
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires:
-.PHONY : CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
+CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires:
+.PHONY : CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides
+CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides: CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides
 
-CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.provides.build: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o: include/moc_button_ids.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_35)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o -c /build/kiss-script/ks2/build/include/moc_button_ids.cxx
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_button_ids.cxx > CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_button_ids.cxx -o CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o: include/moc_console_widget.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_36)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o -c /build/kiss-script/ks2/build/include/moc_console_widget.cxx
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_console_widget.cxx > CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_console_widget.cxx -o CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o: include/moc_kovan_kmod_sim.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_37)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx > CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_button.cxx.o: include/moc_button.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_38)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_button.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_button.cxx.o -c /build/kiss-script/ks2/build/include/moc_button.cxx
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_button.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_button.cxx > CMakeFiles/ks2.dir/include/moc_button.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_button.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_button.cxx -o CMakeFiles/ks2.dir/include/moc_button.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_button.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o: include/moc_kovan_spiral-inl.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_39)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx > CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o: include/moc_touch_dial.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_40)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o -c /build/kiss-script/ks2/build/include/moc_touch_dial.cxx
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_touch_dial.cxx > CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_touch_dial.cxx -o CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_robot.cxx.o: include/moc_robot.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_41)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_robot.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_robot.cxx.o -c /build/kiss-script/ks2/build/include/moc_robot.cxx
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_robot.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_robot.cxx > CMakeFiles/ks2.dir/include/moc_robot.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_robot.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_robot.cxx -o CMakeFiles/ks2.dir/include/moc_robot.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_robot.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o: include/moc_server_thread.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_42)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o -c /build/kiss-script/ks2/build/include/moc_server_thread.cxx
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_server_thread.cxx > CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_server_thread.cxx -o CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o: include/moc_heartbeat.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_43)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o -c /build/kiss-script/ks2/build/include/moc_heartbeat.cxx
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_heartbeat.cxx > CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_heartbeat.cxx -o CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o: include/moc_scaling_graphics_view.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_44)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o -c /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx > CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx -o CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides
-
-CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o
+CMakeFiles/ks2.dir/src/heartbeat.cpp.o.provides.build: CMakeFiles/ks2.dir/src/heartbeat.cpp.o
 
 CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o: include/moc_kovan_regs_p.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_35)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_regs_p.cxx
 
@@ -1729,32 +1499,78 @@ CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o.provides: CMakeFiles/ks2.dir/i
 
 CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.o: include/moc_board_file.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_46)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_board_file.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_board_file.cxx.o -c /build/kiss-script/ks2/build/include/moc_board_file.cxx
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o: include/moc_button_ids.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_36)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o -c /build/kiss-script/ks2/build/include/moc_button_ids.cxx
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_board_file.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_board_file.cxx > CMakeFiles/ks2.dir/include/moc_board_file.cxx.i
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_button_ids.cxx > CMakeFiles/ks2.dir/include/moc_button_ids.cxx.i
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_board_file.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_board_file.cxx -o CMakeFiles/ks2.dir/include/moc_board_file.cxx.s
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_button_ids.cxx -o CMakeFiles/ks2.dir/include/moc_button_ids.cxx.s
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides
 
-CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o
+CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o: include/moc_heartbeat.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_37)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o -c /build/kiss-script/ks2/build/include/moc_heartbeat.cxx
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_heartbeat.cxx > CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_heartbeat.cxx -o CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o: include/moc_server_thread.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_38)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o -c /build/kiss-script/ks2/build/include/moc_server_thread.cxx
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_server_thread.cxx > CMakeFiles/ks2.dir/include/moc_server_thread.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_server_thread.cxx -o CMakeFiles/ks2.dir/include/moc_server_thread.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o
 
 CMakeFiles/ks2.dir/include/moc_light.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/include/moc_light.cxx.o: include/moc_light.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_39)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_light.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_light.cxx.o -c /build/kiss-script/ks2/build/include/moc_light.cxx
 
@@ -1775,9 +1591,32 @@ CMakeFiles/ks2.dir/include/moc_light.cxx.o.provides: CMakeFiles/ks2.dir/include/
 
 CMakeFiles/ks2.dir/include/moc_light.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_light.cxx.o
 
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o: include/moc_console_widget.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_40)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o -c /build/kiss-script/ks2/build/include/moc_console_widget.cxx
+
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_console_widget.cxx > CMakeFiles/ks2.dir/include/moc_console_widget.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_console_widget.cxx -o CMakeFiles/ks2.dir/include/moc_console_widget.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o
+
 CMakeFiles/ks2.dir/include/moc_main_window.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/include/moc_main_window.cxx.o: include/moc_main_window.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_41)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_main_window.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_main_window.cxx.o -c /build/kiss-script/ks2/build/include/moc_main_window.cxx
 
@@ -1798,9 +1637,32 @@ CMakeFiles/ks2.dir/include/moc_main_window.cxx.o.provides: CMakeFiles/ks2.dir/in
 
 CMakeFiles/ks2.dir/include/moc_main_window.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_main_window.cxx.o
 
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.o: include/moc_simulator.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_42)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_simulator.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_simulator.cxx.o -c /build/kiss-script/ks2/build/include/moc_simulator.cxx
+
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_simulator.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_simulator.cxx > CMakeFiles/ks2.dir/include/moc_simulator.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_simulator.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_simulator.cxx -o CMakeFiles/ks2.dir/include/moc_simulator.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o
+
 CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o: include/moc_compile_worker.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_43)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o -c /build/kiss-script/ks2/build/include/moc_compile_worker.cxx
 
@@ -1821,28 +1683,166 @@ CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o.provides: CMakeFiles/ks2.dir
 
 CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.o: include/moc_simulator.cxx
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.o: include/moc_board_file.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_44)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_board_file.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_board_file.cxx.o -c /build/kiss-script/ks2/build/include/moc_board_file.cxx
+
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_board_file.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_board_file.cxx > CMakeFiles/ks2.dir/include/moc_board_file.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_board_file.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_board_file.cxx -o CMakeFiles/ks2.dir/include/moc_board_file.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_robot.cxx.o: include/moc_robot.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_45)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_robot.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_robot.cxx.o -c /build/kiss-script/ks2/build/include/moc_robot.cxx
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_robot.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_robot.cxx > CMakeFiles/ks2.dir/include/moc_robot.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_robot.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_robot.cxx -o CMakeFiles/ks2.dir/include/moc_robot.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_robot.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_robot.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o: include/moc_kovan_protocol_p.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_46)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx > CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_button.cxx.o: include/moc_button.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_47)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_button.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_button.cxx.o -c /build/kiss-script/ks2/build/include/moc_button.cxx
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_button.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_button.cxx > CMakeFiles/ks2.dir/include/moc_button.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_button.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_button.cxx -o CMakeFiles/ks2.dir/include/moc_button.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_button.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_button.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o: include/moc_touch_dial.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_48)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o -c /build/kiss-script/ks2/build/include/moc_touch_dial.cxx
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_touch_dial.cxx > CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_touch_dial.cxx -o CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o: include/moc_kovan_kmod_sim.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_49)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx > CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.i
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_kmod_sim.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.s
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides
+
+CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o
+
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o: include/moc_kovan_spiral-inl.cxx
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_50)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_simulator.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_simulator.cxx.o -c /build/kiss-script/ks2/build/include/moc_simulator.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_simulator.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_simulator.cxx > CMakeFiles/ks2.dir/include/moc_simulator.cxx.i
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx > CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.i
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_simulator.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_simulator.cxx -o CMakeFiles/ks2.dir/include/moc_simulator.cxx.s
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_spiral-inl.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.s
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides
 
-CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o
+CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o
 
 CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o: include/moc_kovan_button_provider.cxx
@@ -1867,28 +1867,28 @@ CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o.provides: CMakeFiles/
 
 CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o: CMakeFiles/ks2.dir/flags.make
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o: include/moc_kovan_protocol_p.cxx
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o: CMakeFiles/ks2.dir/flags.make
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o: include/moc_scaling_graphics_view.cxx
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/ks2/build/CMakeFiles $(CMAKE_PROGRESS_52)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o -c /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o -c /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx > CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.i
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx > CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.i
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_kovan_protocol_p.cxx -o CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.s
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/ks2/build/include/moc_scaling_graphics_view.cxx -o CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.s
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires:
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires:
+.PHONY : CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires
-	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides.build
-.PHONY : CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
+	$(MAKE) -f CMakeFiles/ks2.dir/build.make CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides.build
+.PHONY : CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides
 
-CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o
+CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.provides.build: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o
 
 CMakeFiles/ks2.dir/qrc_icons.cxx.o: CMakeFiles/ks2.dir/flags.make
 CMakeFiles/ks2.dir/qrc_icons.cxx.o: qrc_icons.cxx
@@ -1915,80 +1915,80 @@ CMakeFiles/ks2.dir/qrc_icons.cxx.o.provides.build: CMakeFiles/ks2.dir/qrc_icons.
 
 # Object files for target ks2
 ks2_OBJECTS = \
+"CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o" \
+"CMakeFiles/ks2.dir/src/compile_worker.cpp.o" \
+"CMakeFiles/ks2.dir/src/touch_dial.cpp.o" \
+"CMakeFiles/ks2.dir/src/console_widget.cpp.o" \
+"CMakeFiles/ks2.dir/src/main_window.cpp.o" \
 "CMakeFiles/ks2.dir/src/button.cpp.o" \
 "CMakeFiles/ks2.dir/src/server_thread.cpp.o" \
-"CMakeFiles/ks2.dir/src/main_window.cpp.o" \
-"CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o" \
 "CMakeFiles/ks2.dir/src/main.cpp.o" \
-"CMakeFiles/ks2.dir/src/robot.cpp.o" \
-"CMakeFiles/ks2.dir/src/heartbeat.cpp.o" \
-"CMakeFiles/ks2.dir/src/console_widget.cpp.o" \
-"CMakeFiles/ks2.dir/src/compile_worker.cpp.o" \
 "CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o" \
-"CMakeFiles/ks2.dir/src/light.cpp.o" \
+"CMakeFiles/ks2.dir/src/robot.cpp.o" \
+"CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o" \
 "CMakeFiles/ks2.dir/src/board_file.cpp.o" \
-"CMakeFiles/ks2.dir/src/touch_dial.cpp.o" \
-"CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o" \
-"CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_button.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_robot.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o" \
+"CMakeFiles/ks2.dir/src/light.cpp.o" \
+"CMakeFiles/ks2.dir/src/heartbeat.cpp.o" \
 "CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_board_file.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o" \
 "CMakeFiles/ks2.dir/include/moc_light.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o" \
 "CMakeFiles/ks2.dir/include/moc_main_window.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o" \
 "CMakeFiles/ks2.dir/include/moc_simulator.cxx.o" \
-"CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_board_file.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_robot.cxx.o" \
 "CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_button.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o" \
+"CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o" \
 "CMakeFiles/ks2.dir/qrc_icons.cxx.o"
 
 # External object files for target ks2
 ks2_EXTERNAL_OBJECTS =
 
+../deploy/ks2: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/compile_worker.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/touch_dial.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/console_widget.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/main_window.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/src/button.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/src/server_thread.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/main_window.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/src/main.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/robot.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/heartbeat.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/console_widget.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/compile_worker.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/light.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/robot.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/src/board_file.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/touch_dial.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_button.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_robot.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/light.cpp.o
+../deploy/ks2: CMakeFiles/ks2.dir/src/heartbeat.cpp.o
 ../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/include/moc_light.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/include/moc_main_window.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o
-../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_robot.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_button.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o
+../deploy/ks2: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/qrc_icons.cxx.o
 ../deploy/ks2: CMakeFiles/ks2.dir/build.make
-../deploy/ks2: /usr/lib64/libQtGui.so
-../deploy/ks2: /usr/lib64/libQtNetwork.so
-../deploy/ks2: /usr/lib64/libQtCore.so
+../deploy/ks2: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../deploy/ks2: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../deploy/ks2: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../deploy/ks2: CMakeFiles/ks2.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../deploy/ks2"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ks2.dir/link.txt --verbose=$(VERBOSE)
@@ -1997,38 +1997,38 @@ ks2_EXTERNAL_OBJECTS =
 CMakeFiles/ks2.dir/build: ../deploy/ks2
 .PHONY : CMakeFiles/ks2.dir/build
 
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/button.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/server_thread.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/main_window.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/main.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/robot.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/console_widget.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/compile_worker.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/kovan_button_provider.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/light.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/robot.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/kovan_kmod_sim.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/board_file.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/touch_dial.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/scaling_graphics_view.cpp.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/light.cpp.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/src/heartbeat.cpp.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_regs_p.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_button_ids.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_heartbeat.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_server_thread.cxx.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_light.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_console_widget.cxx.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_main_window.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_simulator.cxx.o.requires
-CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_compile_worker.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_board_file.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_robot.cxx.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_protocol_p.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_button.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_touch_dial.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_kmod_sim.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_spiral-inl.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_kovan_button_provider.cxx.o.requires
+CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/include/moc_scaling_graphics_view.cxx.o.requires
 CMakeFiles/ks2.dir/requires: CMakeFiles/ks2.dir/qrc_icons.cxx.o.requires
 .PHONY : CMakeFiles/ks2.dir/requires
 
@@ -2036,24 +2036,24 @@ CMakeFiles/ks2.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/ks2.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/ks2.dir/clean
 
-CMakeFiles/ks2.dir/depend: include/moc_button_ids.cxx
-CMakeFiles/ks2.dir/depend: include/moc_console_widget.cxx
-CMakeFiles/ks2.dir/depend: include/moc_kovan_kmod_sim.cxx
-CMakeFiles/ks2.dir/depend: include/moc_button.cxx
-CMakeFiles/ks2.dir/depend: include/moc_kovan_spiral-inl.cxx
-CMakeFiles/ks2.dir/depend: include/moc_touch_dial.cxx
-CMakeFiles/ks2.dir/depend: include/moc_robot.cxx
-CMakeFiles/ks2.dir/depend: include/moc_server_thread.cxx
-CMakeFiles/ks2.dir/depend: include/moc_heartbeat.cxx
-CMakeFiles/ks2.dir/depend: include/moc_scaling_graphics_view.cxx
 CMakeFiles/ks2.dir/depend: include/moc_kovan_regs_p.cxx
-CMakeFiles/ks2.dir/depend: include/moc_board_file.cxx
+CMakeFiles/ks2.dir/depend: include/moc_button_ids.cxx
+CMakeFiles/ks2.dir/depend: include/moc_heartbeat.cxx
+CMakeFiles/ks2.dir/depend: include/moc_server_thread.cxx
 CMakeFiles/ks2.dir/depend: include/moc_light.cxx
+CMakeFiles/ks2.dir/depend: include/moc_console_widget.cxx
 CMakeFiles/ks2.dir/depend: include/moc_main_window.cxx
-CMakeFiles/ks2.dir/depend: include/moc_compile_worker.cxx
 CMakeFiles/ks2.dir/depend: include/moc_simulator.cxx
-CMakeFiles/ks2.dir/depend: include/moc_kovan_button_provider.cxx
+CMakeFiles/ks2.dir/depend: include/moc_compile_worker.cxx
+CMakeFiles/ks2.dir/depend: include/moc_board_file.cxx
+CMakeFiles/ks2.dir/depend: include/moc_robot.cxx
 CMakeFiles/ks2.dir/depend: include/moc_kovan_protocol_p.cxx
+CMakeFiles/ks2.dir/depend: include/moc_button.cxx
+CMakeFiles/ks2.dir/depend: include/moc_touch_dial.cxx
+CMakeFiles/ks2.dir/depend: include/moc_kovan_kmod_sim.cxx
+CMakeFiles/ks2.dir/depend: include/moc_kovan_spiral-inl.cxx
+CMakeFiles/ks2.dir/depend: include/moc_kovan_button_provider.cxx
+CMakeFiles/ks2.dir/depend: include/moc_scaling_graphics_view.cxx
 CMakeFiles/ks2.dir/depend: ui_main_window.h
 CMakeFiles/ks2.dir/depend: qrc_icons.cxx
 	cd /build/kiss-script/ks2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /build/kiss-script/ks2 /build/kiss-script/ks2 /build/kiss-script/ks2/build /build/kiss-script/ks2/build /build/kiss-script/ks2/build/CMakeFiles/ks2.dir/DependInfo.cmake --color=$(COLOR)

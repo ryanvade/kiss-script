@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -55,17 +55,17 @@ include plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/fl
 plugins/interfaces/kovan_serial/moc_kovan_serial_interface.cxx: ../plugins/interfaces/kovan_serial/kovan_serial_interface.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_kovan_serial_interface.cxx"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/moc_kovan_serial_interface.cxx /build/kiss-script/kiss/plugins/interfaces/kovan_serial/kovan_serial_interface.hpp
-
-plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx: ../plugins/interfaces/shared/keys.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_2)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __/shared/moc_keys.cxx"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx /build/kiss-script/kiss/plugins/interfaces/shared/keys.hpp
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/moc_kovan_serial_interface.cxx /build/kiss-script/kiss/plugins/interfaces/kovan_serial/kovan_serial_interface.hpp
 
 plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx: ../plugins/interfaces/shared/kovan_proto_target.hpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __/shared/moc_kovan_proto_target.cxx"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx /build/kiss-script/kiss/plugins/interfaces/shared/kovan_proto_target.hpp
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx /build/kiss-script/kiss/plugins/interfaces/shared/kovan_proto_target.hpp
+
+plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx: ../plugins/interfaces/shared/keys.hpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating __/shared/moc_keys.cxx"
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/interfaces/kovan_serial -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/build/kiss-script/kiss/plugins/interfaces/kovan_serial/../shared -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx /build/kiss-script/kiss/plugins/interfaces/shared/keys.hpp
 
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/kovan_serial_interface.cpp.o: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/flags.make
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/kovan_serial_interface.cpp.o: ../plugins/interfaces/kovan_serial/kovan_serial_interface.cpp
@@ -136,32 +136,9 @@ plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/moc_kovan_
 
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/moc_kovan_serial_interface.cxx.o.provides.build: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/moc_kovan_serial_interface.cxx.o
 
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/flags.make
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o: plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o -c /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
-
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx > CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i
-
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s"
-	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx -o CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s
-
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires:
-.PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
-
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
-	$(MAKE) -f plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/build.make plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides.build
-.PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides
-
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides.build: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o
-
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/flags.make
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o: plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx
-	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o"
 	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o -c /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx
 
@@ -182,13 +159,36 @@ plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/
 
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o.provides.build: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o
 
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/flags.make
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o: plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
+	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o"
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o -c /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
+
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i"
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx > CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.i
+
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s"
+	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx -o CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.s
+
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires:
+.PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
+
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
+	$(MAKE) -f plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/build.make plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides.build
+.PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides
+
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.provides.build: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o
+
 # Object files for target kovan_serial_interface
 kovan_serial_interface_OBJECTS = \
 "CMakeFiles/kovan_serial_interface.dir/kovan_serial_interface.cpp.o" \
 "CMakeFiles/kovan_serial_interface.dir/__/shared/kovan_proto_target.cpp.o" \
 "CMakeFiles/kovan_serial_interface.dir/moc_kovan_serial_interface.cxx.o" \
-"CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o" \
-"CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o"
+"CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o" \
+"CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o"
 
 # External object files for target kovan_serial_interface
 kovan_serial_interface_EXTERNAL_OBJECTS =
@@ -196,19 +196,19 @@ kovan_serial_interface_EXTERNAL_OBJECTS =
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/kovan_serial_interface.cpp.o
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/kovan_proto_target.cpp.o
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/moc_kovan_serial_interface.cxx.o
-../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o
+../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/build.make
 ../lib/libkovan_serial_interface.so: ../lib/libkisside.a
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtDeclarative.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtScript.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtSvg.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtXmlPatterns.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtGui.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtXml.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtSql.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtNetwork.so
-../lib/libkovan_serial_interface.so: /usr/lib64/libQtCore.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../lib/libkovan_serial_interface.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../lib/libkovan_serial_interface.so: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../../lib/libkovan_serial_interface.so"
 	cd /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kovan_serial_interface.dir/link.txt --verbose=$(VERBOSE)
@@ -220,8 +220,8 @@ plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/build: ../
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/kovan_serial_interface.cpp.o.requires
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/kovan_proto_target.cpp.o.requires
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/moc_kovan_serial_interface.cxx.o.requires
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_kovan_proto_target.cxx.o.requires
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires: plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/__/shared/moc_keys.cxx.o.requires
 .PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/requires
 
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/clean:
@@ -229,8 +229,8 @@ plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/clean:
 .PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/clean
 
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/depend: plugins/interfaces/kovan_serial/moc_kovan_serial_interface.cxx
-plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/depend: plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
 plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/depend: plugins/interfaces/kovan_serial/__/shared/moc_kovan_proto_target.cxx
+plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/depend: plugins/interfaces/kovan_serial/__/shared/moc_keys.cxx
 	cd /build/kiss-script/kiss/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /build/kiss-script/kiss /build/kiss-script/kiss/plugins/interfaces/kovan_serial /build/kiss-script/kiss/build /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial /build/kiss-script/kiss/build/plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : plugins/interfaces/kovan_serial/CMakeFiles/kovan_serial_interface.dir/depend
 

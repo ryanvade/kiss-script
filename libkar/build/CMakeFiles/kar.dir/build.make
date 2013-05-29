@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/libkar
@@ -84,7 +84,7 @@ kar_EXTERNAL_OBJECTS =
 
 ../lib/libkar.so: CMakeFiles/kar.dir/kar.cpp.o
 ../lib/libkar.so: CMakeFiles/kar.dir/build.make
-../lib/libkar.so: /usr/lib64/libQtCore.so
+../lib/libkar.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../lib/libkar.so: CMakeFiles/kar.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../lib/libkar.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kar.dir/link.txt --verbose=$(VERBOSE)

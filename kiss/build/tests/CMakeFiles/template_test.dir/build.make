@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -85,15 +85,15 @@ template_test_EXTERNAL_OBJECTS =
 ../deploy/template_test: tests/CMakeFiles/template_test.dir/template_test.cpp.o
 ../deploy/template_test: tests/CMakeFiles/template_test.dir/build.make
 ../deploy/template_test: ../lib/libkisside.a
-../deploy/template_test: /usr/lib64/libQtDeclarative.so
-../deploy/template_test: /usr/lib64/libQtScript.so
-../deploy/template_test: /usr/lib64/libQtSvg.so
-../deploy/template_test: /usr/lib64/libQtXmlPatterns.so
-../deploy/template_test: /usr/lib64/libQtGui.so
-../deploy/template_test: /usr/lib64/libQtXml.so
-../deploy/template_test: /usr/lib64/libQtSql.so
-../deploy/template_test: /usr/lib64/libQtNetwork.so
-../deploy/template_test: /usr/lib64/libQtCore.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../deploy/template_test: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../deploy/template_test: tests/CMakeFiles/template_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable ../../deploy/template_test"
 	cd /build/kiss-script/kiss/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/template_test.dir/link.txt --verbose=$(VERBOSE)

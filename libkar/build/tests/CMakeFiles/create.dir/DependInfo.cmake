@@ -10,8 +10,10 @@ SET(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
+  "QT_NO_DEBUG"
   "QT_CORE_LIB"
   "QT_NO_DEBUG"
+  "QT_CORE_LIB"
   )
 
 # Targets to which this target links.

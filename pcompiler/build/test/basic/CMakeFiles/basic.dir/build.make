@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/pcompiler
@@ -85,7 +85,7 @@ basic_EXTERNAL_OBJECTS =
 test/basic/basic: test/basic/CMakeFiles/basic.dir/basic.cpp.o
 test/basic/basic: test/basic/CMakeFiles/basic.dir/build.make
 test/basic/basic: ../lib/libpcompiler.so
-test/basic/basic: /usr/lib64/libQtCore.so
+test/basic/basic: /usr/lib/x86_64-linux-gnu/libQtCore.so
 test/basic/basic: test/basic/CMakeFiles/basic.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable basic"
 	cd /build/kiss-script/pcompiler/build/test/basic && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/basic.dir/link.txt --verbose=$(VERBOSE)

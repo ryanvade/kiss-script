@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/pcompiler
@@ -85,7 +85,7 @@ test_option_parser_EXTERNAL_OBJECTS =
 test/option_parser/test_option_parser: test/option_parser/CMakeFiles/test_option_parser.dir/test_option_parser.cpp.o
 test/option_parser/test_option_parser: test/option_parser/CMakeFiles/test_option_parser.dir/build.make
 test/option_parser/test_option_parser: ../lib/libpcompiler.so
-test/option_parser/test_option_parser: /usr/lib64/libQtCore.so
+test/option_parser/test_option_parser: /usr/lib/x86_64-linux-gnu/libQtCore.so
 test/option_parser/test_option_parser: test/option_parser/CMakeFiles/test_option_parser.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable test_option_parser"
 	cd /build/kiss-script/pcompiler/build/test/option_parser && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test_option_parser.dir/link.txt --verbose=$(VERBOSE)

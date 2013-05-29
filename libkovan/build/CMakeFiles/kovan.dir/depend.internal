@@ -95,11 +95,9 @@ CMakeFiles/kovan.dir/src/ardrone_video_p.cpp.o
  /build/kiss-script/libkovan/src/ardrone_video_p.hpp
  /build/kiss-script/libkovan/src/uvlc_video_decoder_p.hpp
  /usr/include/libavcodec/avcodec.h
- /usr/include/libavcodec/old_codec_ids.h
  /usr/include/libavformat/avformat.h
  /usr/include/libavformat/avio.h
  /usr/include/libswscale/swscale.h
- /usr/include/libswscale/version.h
 CMakeFiles/kovan.dir/src/audio.cpp.o
  ../include/kovan/audio.h
  ../include/kovan/export.h

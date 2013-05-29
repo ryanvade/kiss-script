@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -55,7 +55,7 @@ include plugins/lexers/python/CMakeFiles/python_lexer.dir/flags.make
 plugins/lexers/python/moc_lexer_python.cxx: ../plugins/lexers/python/lexer_python.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_lexer_python.cxx"
-	cd /build/kiss-script/kiss/build/plugins/lexers/python && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/lexers/python -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/lexers/python/moc_lexer_python.cxx /build/kiss-script/kiss/plugins/lexers/python/lexer_python.hpp
+	cd /build/kiss-script/kiss/build/plugins/lexers/python && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/lexers/python -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/lexers/python/moc_lexer_python.cxx /build/kiss-script/kiss/plugins/lexers/python/lexer_python.hpp
 
 plugins/lexers/python/CMakeFiles/python_lexer.dir/lexer_python.cpp.o: plugins/lexers/python/CMakeFiles/python_lexer.dir/flags.make
 plugins/lexers/python/CMakeFiles/python_lexer.dir/lexer_python.cpp.o: ../plugins/lexers/python/lexer_python.cpp
@@ -115,15 +115,15 @@ python_lexer_EXTERNAL_OBJECTS =
 ../lib/libpython_lexer.so: plugins/lexers/python/CMakeFiles/python_lexer.dir/moc_lexer_python.cxx.o
 ../lib/libpython_lexer.so: plugins/lexers/python/CMakeFiles/python_lexer.dir/build.make
 ../lib/libpython_lexer.so: ../lib/libkisside.a
-../lib/libpython_lexer.so: /usr/lib64/libQtDeclarative.so
-../lib/libpython_lexer.so: /usr/lib64/libQtScript.so
-../lib/libpython_lexer.so: /usr/lib64/libQtSvg.so
-../lib/libpython_lexer.so: /usr/lib64/libQtXmlPatterns.so
-../lib/libpython_lexer.so: /usr/lib64/libQtGui.so
-../lib/libpython_lexer.so: /usr/lib64/libQtXml.so
-../lib/libpython_lexer.so: /usr/lib64/libQtSql.so
-../lib/libpython_lexer.so: /usr/lib64/libQtNetwork.so
-../lib/libpython_lexer.so: /usr/lib64/libQtCore.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../lib/libpython_lexer.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../lib/libpython_lexer.so: plugins/lexers/python/CMakeFiles/python_lexer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../../lib/libpython_lexer.so"
 	cd /build/kiss-script/kiss/build/plugins/lexers/python && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/python_lexer.dir/link.txt --verbose=$(VERBOSE)

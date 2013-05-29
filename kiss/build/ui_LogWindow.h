@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'LogWindow.ui'
 **
-** Created: Wed May 29 12:25:34 2013
+** Created: Wed May 29 16:42:46 2013
 **      by: Qt User Interface Compiler version 4.8.4
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!

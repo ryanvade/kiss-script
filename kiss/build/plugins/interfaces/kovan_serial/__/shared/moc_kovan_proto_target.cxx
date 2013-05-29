@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'kovan_proto_target.hpp'
 **
-** Created: Wed May 29 12:30:56 2013
+** Created: Wed May 29 16:46:01 2013
 **      by: The Qt Meta Object Compiler version 63 (Qt 4.8.4)
 **
 ** WARNING! All changes made in this file will be lost!

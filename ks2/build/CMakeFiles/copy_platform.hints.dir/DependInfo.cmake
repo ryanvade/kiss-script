@@ -5,10 +5,14 @@ SET(CMAKE_DEPENDS_LANGUAGES
 
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
-  "QT_CORE_LIB"
+  "QT_NO_DEBUG"
   "QT_GUI_LIB"
   "QT_NETWORK_LIB"
+  "QT_CORE_LIB"
   "QT_NO_DEBUG"
+  "QT_GUI_LIB"
+  "QT_NETWORK_LIB"
+  "QT_CORE_LIB"
   )
 
 # Targets to which this target links.

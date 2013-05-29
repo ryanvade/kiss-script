@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/libkar
@@ -84,9 +84,9 @@ kissarchive_EXTERNAL_OBJECTS =
 
 tools/kissarchive: tools/CMakeFiles/kissarchive.dir/kissarchive.cpp.o
 tools/kissarchive: tools/CMakeFiles/kissarchive.dir/build.make
-tools/kissarchive: /usr/lib64/libQtCore.so
+tools/kissarchive: /usr/lib/x86_64-linux-gnu/libQtCore.so
 tools/kissarchive: ../lib/libkar.so
-tools/kissarchive: /usr/lib64/libQtCore.so
+tools/kissarchive: /usr/lib/x86_64-linux-gnu/libQtCore.so
 tools/kissarchive: tools/CMakeFiles/kissarchive.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable kissarchive"
 	cd /build/kiss-script/libkar/build/tools && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/kissarchive.dir/link.txt --verbose=$(VERBOSE)

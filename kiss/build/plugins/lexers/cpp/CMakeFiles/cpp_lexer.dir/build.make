@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -55,7 +55,7 @@ include plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/flags.make
 plugins/lexers/cpp/moc_lexer_cpp.cxx: ../plugins/lexers/cpp/lexer_cpp.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_lexer_cpp.cxx"
-	cd /build/kiss-script/kiss/build/plugins/lexers/cpp && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/lexers/cpp -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/lexers/cpp/moc_lexer_cpp.cxx /build/kiss-script/kiss/plugins/lexers/cpp/lexer_cpp.hpp
+	cd /build/kiss-script/kiss/build/plugins/lexers/cpp && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/lexers/cpp -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/lexers/cpp/moc_lexer_cpp.cxx /build/kiss-script/kiss/plugins/lexers/cpp/lexer_cpp.hpp
 
 plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/lexer_cpp.cpp.o: plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/flags.make
 plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/lexer_cpp.cpp.o: ../plugins/lexers/cpp/lexer_cpp.cpp
@@ -115,15 +115,15 @@ cpp_lexer_EXTERNAL_OBJECTS =
 ../lib/libcpp_lexer.so: plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/moc_lexer_cpp.cxx.o
 ../lib/libcpp_lexer.so: plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/build.make
 ../lib/libcpp_lexer.so: ../lib/libkisside.a
-../lib/libcpp_lexer.so: /usr/lib64/libQtDeclarative.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtScript.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtSvg.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtXmlPatterns.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtGui.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtXml.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtSql.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtNetwork.so
-../lib/libcpp_lexer.so: /usr/lib64/libQtCore.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../lib/libcpp_lexer.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../lib/libcpp_lexer.so: plugins/lexers/cpp/CMakeFiles/cpp_lexer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../../lib/libcpp_lexer.so"
 	cd /build/kiss-script/kiss/build/plugins/lexers/cpp && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/cpp_lexer.dir/link.txt --verbose=$(VERBOSE)

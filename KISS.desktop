@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=KISS IDE
+Comment=KIPR Robotics IDE for Linux
+Exec=/opt/kiss-script/kiss/deploy/KISS
+Icon=/opt/kiss-script/KIPR.png
+Terminal=false
+X-MultipleArgs=false
+Categories=Development;IDE;GTK;Qt;
+StartupNotify=true
+MimeType=application/x-KISS_IDE;application/x-KISS_IDE-workspace;

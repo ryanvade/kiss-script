@@ -29,21 +29,21 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "0")
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/pcompiler" TYPE FILE FILES
-    "/build/kiss-script/pcompiler/include/pcompiler/base.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/options.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/engine.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/input.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/compilers.hpp"
     "/build/kiss-script/pcompiler/include/pcompiler/result.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/output.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/pcompiler.hpp"
-    "/build/kiss-script/pcompiler/include/pcompiler/pool.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/compilers.hpp"
     "/build/kiss-script/pcompiler/include/pcompiler/progress.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/base.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/pool.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/input.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/output.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/engine.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/pcompiler.hpp"
+    "/build/kiss-script/pcompiler/include/pcompiler/options.hpp"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

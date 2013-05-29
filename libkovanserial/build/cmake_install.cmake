@@ -29,24 +29,24 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT)
 
 # Install shared libraries without execute permission?
 IF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
-  SET(CMAKE_INSTALL_SO_NO_EXE "0")
+  SET(CMAKE_INSTALL_SO_NO_EXE "1")
 ENDIF(NOT DEFINED CMAKE_INSTALL_SO_NO_EXE)
 
 IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/kovanserial" TYPE FILE FILES
-    "/build/kiss-script/libkovanserial/include/kovanserial/transmitter.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/transport_layer.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/usb_serial_unix.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/udp_advertiser.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/command_types.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/kovan_serial.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/transmitter.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/usb_serial.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/general.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/tcp_serial.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/tcp.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/general.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/usb_serial_win.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/tcp_server.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/platform_defines.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/usb_serial.hpp"
-    "/build/kiss-script/libkovanserial/include/kovanserial/udp_advertiser.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/transport_layer.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/kovan_serial.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/usb_serial_unix.hpp"
+    "/build/kiss-script/libkovanserial/include/kovanserial/tcp_server.hpp"
     "/build/kiss-script/libkovanserial/include/kovanserial/crc.h"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")

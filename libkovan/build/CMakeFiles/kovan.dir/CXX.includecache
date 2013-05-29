@@ -1029,8 +1029,6 @@ libavutil/avutil.h
 /usr/include/libavcodec/libavutil/avutil.h
 libavutil/cpu.h
 /usr/include/libavcodec/libavutil/cpu.h
-libavutil/channel_layout.h
-/usr/include/libavcodec/libavutil/channel_layout.h
 libavutil/dict.h
 /usr/include/libavcodec/libavutil/dict.h
 libavutil/log.h
@@ -1041,12 +1039,8 @@ libavutil/rational.h
 /usr/include/libavcodec/libavutil/rational.h
 libavcodec/version.h
 /usr/include/libavcodec/libavcodec/version.h
-old_codec_ids.h
-/usr/include/libavcodec/old_codec_ids.h
-
-/usr/include/libavcodec/old_codec_ids.h
-libavutil/common.h
-/usr/include/libavcodec/libavutil/common.h
+libavutil/audioconvert.h
+/usr/include/libavcodec/libavutil/audioconvert.h
 
 /usr/include/libavformat/avformat.h
 time.h
@@ -1063,8 +1057,6 @@ avio.h
 /usr/include/libavformat/avio.h
 libavformat/version.h
 /usr/include/libavformat/libavformat/version.h
-libavutil/time.h
-/usr/include/libavformat/libavutil/time.h
 
 /usr/include/libavformat/avio.h
 stdint.h
@@ -1079,18 +1071,10 @@ libavformat/version.h
 /usr/include/libavformat/libavformat/version.h
 
 /usr/include/libswscale/swscale.h
-stdint.h
--
 libavutil/avutil.h
 /usr/include/libswscale/libavutil/avutil.h
 libavutil/log.h
 /usr/include/libswscale/libavutil/log.h
 libavutil/pixfmt.h
 /usr/include/libswscale/libavutil/pixfmt.h
-version.h
-/usr/include/libswscale/version.h
-
-/usr/include/libswscale/version.h
-libavutil/avutil.h
-/usr/include/libswscale/libavutil/avutil.h
 

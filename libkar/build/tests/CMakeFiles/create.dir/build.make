@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/libkar
@@ -84,9 +84,9 @@ create_EXTERNAL_OBJECTS =
 
 tests/create: tests/CMakeFiles/create.dir/create.cpp.o
 tests/create: tests/CMakeFiles/create.dir/build.make
-tests/create: /usr/lib64/libQtCore.so
+tests/create: /usr/lib/x86_64-linux-gnu/libQtCore.so
 tests/create: ../lib/libkar.so
-tests/create: /usr/lib64/libQtCore.so
+tests/create: /usr/lib/x86_64-linux-gnu/libQtCore.so
 tests/create: tests/CMakeFiles/create.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX executable create"
 	cd /build/kiss-script/libkar/build/tests && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/create.dir/link.txt --verbose=$(VERBOSE)

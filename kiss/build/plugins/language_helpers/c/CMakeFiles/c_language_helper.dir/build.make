@@ -35,7 +35,7 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+CMAKE_EDIT_COMMAND = /usr/bin/cmake-gui
 
 # The top-level source directory on which CMake was run.
 CMAKE_SOURCE_DIR = /build/kiss-script/kiss
@@ -55,7 +55,7 @@ include plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/flags.make
 plugins/language_helpers/c/moc_language_helper_c.cxx: ../plugins/language_helpers/c/language_helper_c.hpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /build/kiss-script/kiss/build/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating moc_language_helper_c.cxx"
-	cd /build/kiss-script/kiss/build/plugins/language_helpers/c && /usr/lib/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/language_helpers/c -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/language_helpers/c/moc_language_helper_c.cxx /build/kiss-script/kiss/plugins/language_helpers/c/language_helper_c.hpp
+	cd /build/kiss-script/kiss/build/plugins/language_helpers/c && /usr/lib/x86_64-linux-gnu/qt4/bin/moc -I/build/kiss-script/kiss -I/build/kiss-script/kiss/src -I/build/kiss-script/kiss -I/build/kiss-script/kiss/build -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -I/build/kiss-script/kiss/build/plugins/language_helpers/c -I/usr/include/qt4 -I/build/kiss-script/kiss/include -I/build/kiss-script/kiss/include/dialogs -I/build/kiss-script/kiss/include/lexer -I/build/kiss-script/kiss/include/widgets -I/build/kiss-script/kiss/include/menus -I/build/kiss-script/kiss/include/js -I/build/kiss-script/kiss/include/project -I/build/kiss-script/kiss/include/compiler -I/build/kiss-script/kiss/include/interface -I/usr/include/qt4 -I/usr/include/qt4/QtDeclarative -I/usr/include/qt4/QtScript -I/usr/include/qt4/QtGui -I/usr/include/qt4/QtNetwork -I/usr/include/qt4/QtCore -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -DQT_NO_DEBUG -DQT_DECLARATIVE_LIB -DQT_SCRIPT_LIB -DQT_GUI_LIB -DQT_NETWORK_LIB -DQT_CORE_LIB -o /build/kiss-script/kiss/build/plugins/language_helpers/c/moc_language_helper_c.cxx /build/kiss-script/kiss/plugins/language_helpers/c/language_helper_c.hpp
 
 plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/language_helper_c.cpp.o: plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/flags.make
 plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/language_helper_c.cpp.o: ../plugins/language_helpers/c/language_helper_c.cpp
@@ -115,15 +115,15 @@ c_language_helper_EXTERNAL_OBJECTS =
 ../lib/libc_language_helper.so: plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/moc_language_helper_c.cxx.o
 ../lib/libc_language_helper.so: plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/build.make
 ../lib/libc_language_helper.so: ../lib/libkisside.a
-../lib/libc_language_helper.so: /usr/lib64/libQtDeclarative.so
-../lib/libc_language_helper.so: /usr/lib64/libQtScript.so
-../lib/libc_language_helper.so: /usr/lib64/libQtSvg.so
-../lib/libc_language_helper.so: /usr/lib64/libQtXmlPatterns.so
-../lib/libc_language_helper.so: /usr/lib64/libQtGui.so
-../lib/libc_language_helper.so: /usr/lib64/libQtXml.so
-../lib/libc_language_helper.so: /usr/lib64/libQtSql.so
-../lib/libc_language_helper.so: /usr/lib64/libQtNetwork.so
-../lib/libc_language_helper.so: /usr/lib64/libQtCore.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtDeclarative.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtScript.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtSvg.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtXmlPatterns.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtGui.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtXml.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtSql.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtNetwork.so
+../lib/libc_language_helper.so: /usr/lib/x86_64-linux-gnu/libQtCore.so
 ../lib/libc_language_helper.so: plugins/language_helpers/c/CMakeFiles/c_language_helper.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking CXX shared library ../../../../lib/libc_language_helper.so"
 	cd /build/kiss-script/kiss/build/plugins/language_helpers/c && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/c_language_helper.dir/link.txt --verbose=$(VERBOSE)

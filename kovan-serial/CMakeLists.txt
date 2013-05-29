@@ -1,0 +1,36 @@
+PROJECT(kovan-serial)
+
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6.0)
+
+FIND_PACKAGE(Qt4 REQUIRED)
+
+SET(INCLUDE ${CMAKE_SOURCE_DIR}/include)
+SET(SRC ${CMAKE_SOURCE_DIR}/src)
+
+SET(DBUS ${CMAKE_SOURCE_DIR}/dbus)
+
+INCLUDE_DIRECTORIES(
+	${CMAKE_SOURCE_DIR}
+	${CMAKE_SOURCE_DIR}/src
+	${DBUS}/include
+	${kovan-serial_BINARY_DIR}
+	${INCLUDE}
+)
+
+SET(QT_USE_QTDBUS TRUE)
+
+INCLUDE(${QT_USE_FILE})
+
+FILE(GLOB INCLUDES ${INCLUDE}/*.hpp ${DBUS}/include/*.h)
+FILE(GLOB SOURCES ${SRC}/*.cpp ${DBUS}/src/*.cpp)
+
+SET(kovan-serial_SRCS_CXX ${SOURCES})
+SET(kovan-serial_MOC_SRCS ${INCLUDES})
+
+QT4_WRAP_CPP(kovan-serial_SRCS_CXX ${kovan-serial_MOC_SRCS})
+
+ADD_DEFINITIONS(-Wall)
+ADD_EXECUTABLE(kovan-serial ${kovan-serial_SRCS_CXX})
+
+SET(EXECUTABLE_OUTPUT_PATH ${kovan-serial_SOURCE_DIR}/deploy)
+TARGET_LINK_LIBRARIES(kovan-serial ${QT_LIBRARIES} pcompiler kar kovanserial kovan)
