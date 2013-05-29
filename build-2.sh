@@ -532,7 +532,6 @@ if [ -f /usr/bin/qmake-qt4 ]; then
   
   fi
 
-sudo make install
 else change_directory_error
 
 fi
@@ -547,7 +546,7 @@ if cd "../../../"; then
 
 pwd
 
-  echo "$sudopwd" | _exec $SUDO cp ./kiss-script /opt
+  echo "$sudopwd" | _exec $SUDO mv ./kiss-script /opt
  
  else 
  error_exit
@@ -555,11 +554,15 @@ fi
 
 echo "Linking"
 
-sudo ln -s ./kiss/deploy/KISS /usr/bin/KISS
-#sudo ln -s ./ks2/deploy/ks2 /usr/bin/ks2
+# link IDE in /usr/bin
+sudo ln -s /opt/kiss-script/kiss/deploy/KISS /usr/bin/KISS
+sudo ln -s /opt/kiss-script/ks2/deploy/ks2 /usr/bin/ks2
+
+# link libraries 
 sudo ldconfig /usr/local/include/kiss
 sudo ldconfig /usr/local/include/kovanserial
 sudo ldconfig /usr/local/include/pcompiler
+sudo ldconfig /usr/local/include/kovan
 sudo ldconfig /usr/local/lib
 
 
