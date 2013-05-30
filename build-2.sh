@@ -280,57 +280,7 @@ fi
 
 }
 
-function build_kovan-serial {
 
-if cd "../../kovan-serial/"; then
-  
-pwd
-
-if [ ! -d "build" ]; then
-   
-   #if no build directory
-   
-   mkdir build/
-   
-    cd build/
-  
-    else
-    
-    #if there is a build directory. Clean up. 
-    
-    sudo rm -rf build/*
-    
-    cd build/
-fi
-
-if [ -f /usr/bin/qmake-qt4 ]; then
-   
-   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
-   
-  else 
-  
-  cmake ..
-  
-  fi
-
-make
-  if [ "$?" = "0" ]; then
-  
-  sudo make install
-
-  else
-  
-  error_exit
-  
-  fi
-
-sudo make install
-
-else change_directory_error
-
-fi
-
-}
 
 function build_libkovanserial {
 
@@ -543,6 +493,58 @@ else change_directory_error
 fi
 
 
+
+}
+
+function build_kovan-serial {
+
+if cd "../../kovan-serial/"; then
+  
+pwd
+
+if [ ! -d "build" ]; then
+   
+   #if no build directory
+   
+   mkdir build/
+   
+    cd build/
+  
+    else
+    
+    #if there is a build directory. Clean up. 
+    
+    sudo rm -rf build/*
+    
+    cd build/
+fi
+
+if [ -f /usr/bin/qmake-qt4 ]; then
+   
+   cmake -DQT_QMAKE_EXECUTABLE:FILEPATH="/usr/bin/qmake-qt4" ..
+   
+  else 
+  
+  cmake ..
+  
+  fi
+
+make
+  if [ "$?" = "0" ]; then
+  
+  sudo make install
+
+  else
+  
+  error_exit
+  
+  fi
+
+sudo make install
+
+else change_directory_error
+
+fi
 
 }
 
