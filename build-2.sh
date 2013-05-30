@@ -672,13 +672,13 @@ build_pcompiler
 
 build_libkovanserial
 
-build_kovan-serial
-
 build_kiss
 
 build_i2c_wrapper
 
 build_libkovan
+
+build_kovan-serial
 
 build_ks2
 
