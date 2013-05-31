@@ -197,8 +197,10 @@ if hash yum 2>&-; then
 	echo "Proper symlink for libswscale exists." 
 	fi
 	
+	# This fix is for libav compatability	
 	rm libkovan/src/ardrone_video_p.cpp
 	cp ardrone_video_p.cpp libkovan/src
+	
 	else
 	echo "yum not found. This system is not RHEL based."
 fi
@@ -668,17 +670,6 @@ if [ -d /usr/share/applications ]; then
 	echo "/usr/share/applications does not exist. So not copying Desktop files."
 fi
 
-if [ -f /usr/lib/codeblocks/plugins/libcompiler.so ]; then
-
-sudo  ldconfig /usr/lib/codeblocks/plugins/libcompiler.so
-
-else 
-
-echo "libcompiler.so not found. Missing codeblocks."
-
-error_exit
-
-fi
 
 echo "The BotBall Icon is included. Good bye." 
 

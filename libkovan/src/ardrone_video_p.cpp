@@ -202,7 +202,7 @@ public:
 	        m_codecCtx->pix_fmt = PIX_FMT_YUV420P;
 	        m_codecCtx->skip_frame = AVDISCARD_DEFAULT;
 	        m_codecCtx->error_concealment = FF_EC_GUESS_MVS | FF_EC_DEBLOCK;
-	        m_codecCtx->error_recognition = FF_ER_CAREFUL;
+	        m_codecCtx->err_recognition = AV_EF_CRCCHECK;
 	        m_codecCtx->skip_loop_filter = AVDISCARD_DEFAULT;
 	        m_codecCtx->workaround_bugs = FF_BUG_AUTODETECT;
 	        m_codecCtx->codec_type = AVMEDIA_TYPE_VIDEO;
