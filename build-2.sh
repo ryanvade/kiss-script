@@ -196,7 +196,9 @@ if hash yum 2>&-; then
 	else
 	echo "Proper symlink for libswscale exists." 
 	fi
-
+	
+	rm libkovan/src/ardrone_video_p.cpp
+	cp ardrone_video_p.cpp libkovan/src
 	else
 	echo "yum not found. This system is not RHEL based."
 fi
