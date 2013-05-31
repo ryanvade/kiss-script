@@ -169,7 +169,20 @@ if hash apt-get 2>&-; then
 	echo "apt-get not found. This is not a debian based system."
 fi
 
+if hash yum 2>&-; then
+
+	echo "$sudopwd" | _exec $SUDO yum check-update
+	
+	echo "$sudopwd" | _exec $SUDO yum install cmake make gcc qscintilla* codeblocks* gcc-c++ zbar* opencv*  -y
+	
+	# This fix is is because FEDORA places libavcodec in an odd location.
+	echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libavcodec /usr/include
+	
+	else
+	echo "yum not found. This system is not RHEL based."
+fi
 }
+
 #################################################################################################################################################
 #                                                         Function Declerations
 #################################################################################################################################################
