@@ -173,11 +173,30 @@ if hash yum 2>&-; then
 
 	echo "$sudopwd" | _exec $SUDO yum check-update
 	
-	echo "$sudopwd" | _exec $SUDO yum install cmake make gcc qscintilla* codeblocks* gcc-c++ zbar* opencv*  -y
+	echo "$sudopwd" | _exec $SUDO yum install cmake make gcc qscintilla* codeblocks* gcc-c++ zbar* opencv* libzip* bzip2* -y
 	
-	# This fix is is because FEDORA places libavcodec in an odd location.
-	echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libavcodec /usr/include
-	
+	# This fix is is because FEDORA places libav* in an odd location.
+	if  [ ! -d "/usr/include/libavcodec" ]; then
+	echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libavcodec /usr/include/
+	else
+	echo "Proper symlink already for libavcodec exists."
+	fi
+	if  [ ! -d "/usr/include/libavutils" ]; then
+	echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libavutils /usr/include/
+	else
+	echo "Proper symlink for libavutils exists."
+	fi
+	if  [ ! -d "/usr/include/libavformat" ]; then
+        echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libavformat /usr/include/
+        else
+	echo "Proper symlink for libavformat exists."
+        fi
+	if [ ! -d "/usr/include/libswscale" ]; then
+	echo "$sudopwd" | _exec $SUDO ln -s /usr/include/ffmpeg/libswscale /usr/include/
+	else
+	echo "Proper symlink for libswscale exists." 
+	fi
+
 	else
 	echo "yum not found. This system is not RHEL based."
 fi
