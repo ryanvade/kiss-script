@@ -163,7 +163,7 @@ if hash apt-get 2>&-; then
 
 	echo "$sudopwd" | _exec $SUDO apt-get update
 
-	echo "$sudopwd" | _exec $SUDO apt-get install libzbar-dev g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-* -y
+	echo "$sudopwd" | _exec $SUDO apt-get install libzbar-dev g++ libqscintilla2-dev cmake codeblocks  libopencv-* libqt4-core libqt4-dev -y
 	
 	else
 	echo "apt-get not found. This is not a debian based system."
